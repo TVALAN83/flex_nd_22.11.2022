@@ -1,0 +1,57 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* first sample */
+.wrapper{
+   width: 100%; 
+   /* max-width: 1200px; */
+    margin: 0 auto;
+background-color: aliceblue;
+/* padding-top: 10px;(veikia) */
+}
+.main{
+    background-color: rgb(222, 221, 218);
+height: 100vh;
+width: 90%;
+margin: 0 auto;
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+.content{
+    display: flex;
+    padding: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+     flex-grow: 1; 
+}
+   
+.header, .footer{
+    background-color: antiquewhite;
+    height: 30px;
+    margin: 10px;
+    border-radius: 10px;    
+    padding: 0 10px;
+    line-height: 30px;
+}
+.nav, .article, .aside{
+    background-color: aqua;
+    margin: 10px 0;
+    border-radius: 10px;
+    flex-grow: 1; 
+    display: flex;
+    /* (PAGRINDINĖ ašis/horizontalus išcentravimas) */
+    justify-content: center; 
+    /* (vertikalus išcentravimas) */
+    align-items: center; 
+}
+.nav, .aside{
+max-width: 25%;
+}
+.article{
+    margin: 10px 20px;
+}
+
+
