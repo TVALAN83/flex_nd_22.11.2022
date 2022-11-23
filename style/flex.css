@@ -1,15 +1,15 @@
-*{margin: 0;
+/* *{margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 /* first sample */
-.wrapper{
-   width: 100%; 
-   /* max-width: 1200px; */
-    margin: 0 auto;
-background-color: aliceblue;
-/* padding-top: 10px;(veikia) */
-}
+/* .wrapper{
+   width: 100%;  */
+   /* max-width: 1200px; (pavyzdys) */
+    /* margin: 0 auto;
+background-color: aliceblue; */
+/* padding-top: 10px;(veikia, atsistumiat .main nuo .wrapper) */
+/* }
 .main{
     background-color: rgb(222, 221, 218);
 height: 100vh;
@@ -18,16 +18,13 @@ margin: 0 auto;
 padding: 10px;
 display: flex;
 flex-direction: column;
-}
-.content{
-    display: flex;
+} */
+/* .content{
     padding: 10px;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
      flex-grow: 1; 
 }
-   
 .header, .footer{
     background-color: antiquewhite;
     height: 30px;
@@ -42,16 +39,91 @@ flex-direction: column;
     border-radius: 10px;
     flex-grow: 1; 
     display: flex;
-    /* (PAGRINDINĖ ašis/horizontalus išcentravimas) */
-    justify-content: center; 
-    /* (vertikalus išcentravimas) */
-    align-items: center; 
 }
 .nav, .aside{
-max-width: 25%;
+max-width: 25%; */
+/* (PAGRINDINĖ ašis/horizontalus išcentravimas) */
+/* justify-content: center;  */
+/* (vertikalus išcentravimas) */
+/* align-items: center; 
 }
 .article{
     margin: 10px 20px;
+    padding: 10px;
+} */
+
+/* secound sample */
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.wrapper{
+    background-color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 10px (atsitraukia nuo .wrapper); */
+}
+
+.main{
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(194, 200, 200);
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header, .footer{
+    height: 30px;
+    background-color: bisque;
+}
+.content{
+    display: flex;
+    height: 100%;
+    padding:10px 0; 
+}
+
+.content .green{   
+    width: 35%;
+    background-color: greenyellow;
+}
+
+.orange{
+    background-color: orange;
+    width: 65%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+   
+}
+.orange_child{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width:100%;
+height:40%;
+gap: 10px;
+}
+
+.image{
+    background-color: rgb(236, 200, 133);
+width: 20%;
+flex-grow: 1;
+}
+
+.footer, .header, .green, .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article{
+    margin-bottom: 20px;
+}
 
